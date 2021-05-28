@@ -1,0 +1,29 @@
+{
+  "name": "@super-js/xml",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "repository": "git://github.com/super-js/xml",
+  "files": [
+    "lib"
+  ],
+  "author": "Jakub Razak",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^14.14.25",
+    "jest": "^27.0.1",
+    "prettier": "^2.3.0",
+    "pretty-quick": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.1",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/xml2js": "^0.4.8",
+    "xml2js": "^0.4.23"
+  },
+  "scripts": {
+    "build": "yarn run clean && npx tsc -p tsconfig.json",
+    "clean": "npx rimraf lib/**/*"
+  }
+}
